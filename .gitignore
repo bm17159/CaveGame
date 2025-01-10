@@ -74,8 +74,10 @@ crashlytics-build.properties
 
 # Custom ignored folders
 Assets/Graphics/
+Assets/Synty/
 
 # Corresponding META files
 Assets/Graphics.meta
+Assets/Synty.meta
 
 # wow
