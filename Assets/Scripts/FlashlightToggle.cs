@@ -19,20 +19,14 @@ public class FlashlightToggle : MonoBehaviour
         // On start, get vr grab component and connect it to the "activated" event
         XRGrabInteractable grabbable = GetComponent<XRGrabInteractable>();
         grabbable.activated.AddListener(On);
-        grabbable.deactivated.AddListener(Off);
 
         // Flashlight starts off
         lightObject.SetActive(false);
         lensObject.GetComponent<Renderer>().material = offMaterial;
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
     public void On (ActivateEventArgs arg)
     {
+        // c keeps count of the status of 
         c ++;
         // Toggle system
         if (c == 1)
@@ -52,10 +46,6 @@ public class FlashlightToggle : MonoBehaviour
        
         
     }
-    public void Off (DeactivateEventArgs arg)
-    {
-       
-
-    }
+  
 }
 
