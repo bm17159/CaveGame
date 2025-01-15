@@ -76,12 +76,12 @@ crashlytics-build.properties
 Assets/Graphics/
 Assets/Synty/
 Assets/OculusHands/
-Assets/Prefabs/
+
 
 # Corresponding META files
 Assets/Graphics.meta
 Assets/Synty.meta
 Assets/OculusHands.meta
-Assets/Prefabs.meta
+
 
 # wow
