@@ -75,9 +75,13 @@ crashlytics-build.properties
 # Custom ignored folders
 Assets/Graphics/
 Assets/Synty/
+Assets/OculusHands/
+
 
 # Corresponding META files
 Assets/Graphics.meta
 Assets/Synty.meta
+Assets/OculusHands.meta
+
 
 # wow
