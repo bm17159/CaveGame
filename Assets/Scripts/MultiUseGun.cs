@@ -37,12 +37,12 @@ public class MultiUseGun : MonoBehaviour
     private void Start()
     {
         // On start, get vr grab component and connect it to the "activated" event
-        grabInteractable = GetComponent<XRGrabInteractable>();
-        grabInteractable.activated.AddListener(StartGrapple);
-        grabInteractable.deactivated.AddListener(StopGrapple);
-        grabInteractable.activated.AddListener(FireBullet);
+        //grabInteractable = GetComponent<XRGrabInteractable>();
+        //grabInteractable.activated.AddListener(StartGrapple);
+        //grabInteractable.deactivated.AddListener(StopGrapple);
+        //grabInteractable.activated.AddListener(FireBullet);
 
-        moveProvider = playerTransform.GetComponent<ActionBasedContinuousMoveProvider>();
+        //moveProvider = playerTransform.GetComponent<ActionBasedContinuousMoveProvider>();
     }
 
     private void Update()

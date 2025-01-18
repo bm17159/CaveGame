@@ -76,12 +76,13 @@ crashlytics-build.properties
 Assets/Graphics/
 Assets/Synty/
 Assets/OculusHands/
-
+Assets/BNGFramework/
 
 # Corresponding META files
 Assets/Graphics.meta
 Assets/Synty.meta
 Assets/OculusHands.meta
+Assets/BNGFramework.meta
 
 
 # wow

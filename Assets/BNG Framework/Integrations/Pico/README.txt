@@ -1,1 +1,0 @@
-Please note that the Pico SDK has been deprecated. Pico now recommends and supports OpenXR : https://developer.picoxr.com/document/unity-openxr/

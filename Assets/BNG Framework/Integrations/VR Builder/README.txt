@@ -1,1 +1,0 @@
-The most recent VR Builder may be found at : https://github.com/MindPort-GmbH/VRIF-Interaction-Component/releases
