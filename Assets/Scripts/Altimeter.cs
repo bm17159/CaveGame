@@ -26,7 +26,7 @@ public class Altimeter : MonoBehaviour
     void Update()
     {
 		// Set text to altitude
-		Altitude = Mathf.RoundToInt(Player.position.y);
+		Altitude = Mathf.RoundToInt(Player.position.y * 3.28084f);
 		TmeshPro.text = Altitude + "ft";
     }
 }

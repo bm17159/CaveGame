@@ -634,11 +634,12 @@ MonoBehaviour:
   - {fileID: 1815937100}
   - {fileID: 2227877301940604181, guid: 8133cb1ca1d9b2145a4527b6096359ff, type: 3}
   - {fileID: 1775185447818878817, guid: 866b610ce0708bc41b6b29539b7bc7a5, type: 3}
-  previousObjects: []
+  previousObjects:
+  - {fileID: 1815937100}
   currentObject: {fileID: 0}
   player: {fileID: 390095395}
-  spawn: {fileID: 267947329}
-  offset: {x: 0, y: 0, z: 0}
+  parentTransform: {fileID: 267947329}
+  offset: 38
   random: 0
   locker: 0
 --- !u!4 &267947329
@@ -830,7 +831,8 @@ MonoBehaviour:
       m_Interactions: 
       m_SingletonActionBindings: []
       m_Flags: 0
-    m_Reference: {fileID: 0}
+    m_Reference: {fileID: -8198699208435500284, guid: c348712bda248c246b8c49b3db54643f,
+      type: 3}
 --- !u!114 &390095398
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1574,7 +1576,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3454ac3feee9d4d4c9ec0de8bd93ff51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 390095395}
+  Player: {fileID: 572319390}
   Altitude: 0
   TmeshPro: {fileID: 180659137}
 --- !u!114 &641046052
@@ -3271,7 +3273,7 @@ PrefabInstance:
     - target: {fileID: 8334956091975517199, guid: a27a9912480097b459b0fe220c9a50c2,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 19
+      value: -19
       objectReference: {fileID: 0}
     - target: {fileID: 8334956091975517199, guid: a27a9912480097b459b0fe220c9a50c2,
         type: 3}

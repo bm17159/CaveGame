@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Serialization;
 using UnityEngine.UIElements;
 
 public class MapCreation : MonoBehaviour
@@ -14,8 +15,8 @@ public class MapCreation : MonoBehaviour
     [Header("Transforms")]
     [SerializeField] private GameObject currentObject;
     [SerializeField] private Transform player;
-    [SerializeField] private Transform spawn;
-    [SerializeField] private Vector3 offset;
+    [SerializeField] private Transform parentTransform;
+    [SerializeField] private float offset;
 
 
     [Header("Other")]
@@ -29,7 +30,7 @@ public class MapCreation : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        currentObject = objects[0];
+        currentObject = previousObjects[0];
         
     }
 
@@ -51,12 +52,22 @@ public class MapCreation : MonoBehaviour
         // When the player's position = current pos, find the next piece to use
         Debug.Log("Equal");
         random = Random.Range(0, objects.Count);
-        // add next tunnel
-        previousObjects.Add(Instantiate(objects[random], spawn));
+
+        // Instantiate the next object and add it to the list
+        GameObject newObject = Instantiate(objects[random], parentTransform);
+        previousObjects.Add(newObject);
         lastObject = previousObjects.Count - 1;
-        offset = new Vector3(previousObjects[lastObject].transform.position.x, (previousObjects[lastObject].transform.position.y - ((previousObjects[lastObject].transform.position.y) * 2)), previousObjects[lastObject].transform.position.z);
-        previousObjects[lastObject].transform.position =  offset;
-        currentObject = previousObjects[lastObject];
+
+        // Set new object's position directly below the last one
+        Vector3 lastObjectPos = previousObjects[lastObject - 1].transform.position;
+        Vector3 newPos = new Vector3(lastObjectPos.x, lastObjectPos.y - offset, lastObjectPos.z);
+        newObject.transform.position = newPos;
+
+        // Log the new object for debugging
+        Debug.Log(previousObjects[lastObject]);
+
+        // Update current object and lock the process
+        currentObject = newObject;
         locker = true;
     }
 }
