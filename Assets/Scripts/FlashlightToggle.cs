@@ -24,6 +24,19 @@ public class FlashlightToggle : MonoBehaviour
         lightObject.SetActive(false);
         lensObject.GetComponent<Renderer>().material = offMaterial;
     }
+    private void Update()
+    {
+        // monster detection
+        if (c == 1)
+        {
+            RaycastHit hit;
+            if (Physics.Raycast(lightObject.transform.position, lightObject.transform.forward, out hit) && hit.collider.gameObject.tag == "Monster")
+            {
+                Destroy(hit.collider.gameObject);
+            }
+        }
+    }
+
     public void On (ActivateEventArgs arg)
     {
         // c keeps count of the status of 
