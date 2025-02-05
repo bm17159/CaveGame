@@ -920,6 +920,7 @@ GameObject:
   - component: {fileID: 390095396}
   - component: {fileID: 390095399}
   - component: {fileID: 390095400}
+  - component: {fileID: 390095401}
   m_Layer: 6
   m_Name: XR Origin (VR)
   m_TagString: Untagged
@@ -1007,7 +1008,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 390095392}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0bf296fc962d7184ab14ad1841598d5f, type: 3}
   m_Name: 
@@ -1117,6 +1118,34 @@ MonoBehaviour:
   m_LocomotionProvider: {fileID: 390095397}
   m_MinHeight: 0
   m_MaxHeight: Infinity
+--- !u!114 &390095401
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 390095392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5cd3e5a4eed68124ea991fda1721c0b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  leftJoystick:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Left Joystick
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: ad080d2d-61da-47de-9547-cd3e9dabfcdf
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 6972639530819350904, guid: c348712bda248c246b8c49b3db54643f,
+      type: 3}
+  currentInput: {x: 0, y: 0}
+  moveSpeed: 5
+  Player: {fileID: 390095395}
 --- !u!1 &572319389
 GameObject:
   m_ObjectHideFlags: 0
