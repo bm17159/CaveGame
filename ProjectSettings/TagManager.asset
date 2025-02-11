@@ -8,6 +8,7 @@ TagManager:
   - Right Hand
   - Wall
   - Monster
+  - Wall Detector
   layers:
   - Default
   - TransparentFX

@@ -1,9 +1,11 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Serialization;
 using UnityEngine.UIElements;
+using Random = UnityEngine.Random;
 
 public class MapCreation : MonoBehaviour
 {
@@ -21,7 +23,7 @@ public class MapCreation : MonoBehaviour
 
     [Header("Other")]
     [SerializeField] private int random;
-
+    [SerializeField] private float tolerance = 10f;
     private int lastObject;
     [SerializeField] private bool locker = false;
 
@@ -37,17 +39,19 @@ public class MapCreation : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (player.position.y == currentObject.transform.position.y && locker == false)
+        if (Mathf.Abs(player.position.y - currentObject.transform.position.y) <= tolerance && locker == false)
         {
             calculatePos();
-            
-        } else if (player.position.y != currentObject.transform.position.y)
+        }
+        else if (Mathf.Abs(player.position.y - currentObject.transform.position.y) > tolerance)
         {
             locker = false;
         }
     }
 
-    private void calculatePos()
+    
+
+    public void calculatePos()
     {
         // When the player's position = current pos, find the next piece to use
         Debug.Log("Equal");
@@ -68,6 +72,6 @@ public class MapCreation : MonoBehaviour
 
         // Update current object and lock the process
         currentObject = newObject;
-        locker = true;
+        //locker = true;
     }
 }
