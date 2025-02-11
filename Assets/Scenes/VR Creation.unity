@@ -3500,6 +3500,17 @@ PrefabInstance:
       propertyPath: playerTransform
       value: 
       objectReference: {fileID: 390095395}
+    - target: {fileID: 1520003904952111904, guid: 728c5eb70bb55a349b7d9fe09506516a,
+        type: 3}
+      propertyPath: switchAction.m_Reference
+      value: 
+      objectReference: {fileID: 2173405167785655016, guid: c348712bda248c246b8c49b3db54643f,
+        type: 3}
+    - target: {fileID: 1520003904952111904, guid: 728c5eb70bb55a349b7d9fe09506516a,
+        type: 3}
+      propertyPath: switchAction.m_UseReference
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2396907909479035070, guid: 728c5eb70bb55a349b7d9fe09506516a,
         type: 3}
       propertyPath: m_LocalPosition.x
