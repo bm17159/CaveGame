@@ -11,7 +11,7 @@ public class XRGrabInteractableTwoAttached : XRGrabInteractable
 
     public override Transform GetAttachTransform(IXRInteractor interactor)
     {
-        Debug.Log("GetAttachTransform");
+        //Debug.Log("GetAttachTransform");
 
         Transform i_attachTransform = null;
 
