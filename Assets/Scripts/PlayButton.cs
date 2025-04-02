@@ -7,6 +7,7 @@ using UnityEngine.XR.Interaction.Toolkit;
 public class PlayButton : MonoBehaviour
 {
     private XRBaseInteractable interactable;
+    public sceneFader SceneFader;
     // Start is called before the first frame update
     void Start()
     {
