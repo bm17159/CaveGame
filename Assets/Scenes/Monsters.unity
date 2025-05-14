@@ -631,7 +631,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timer: 0
+  min: 60
+  max: 180
+  duration: 2
   Crawler: {fileID: 1753815025}
+  Player: {fileID: 851187991}
 --- !u!4 &1987874713
 Transform:
   m_ObjectHideFlags: 0
