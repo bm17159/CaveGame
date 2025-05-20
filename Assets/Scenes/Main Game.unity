@@ -193,7 +193,7 @@ MonoBehaviour:
   max: 10
   spawnRadius: 2
   Decsender: {fileID: 1035985121}
-  EyeMonster: {fileID: 280377953292036828, guid: 4e40de8070d9711459d25a21cd963dbb,
+  EyeMonster: {fileID: 5686209412179477712, guid: 4e40de8070d9711459d25a21cd963dbb,
     type: 3}
   Player: {fileID: 426668490}
 --- !u!1 &145051270
