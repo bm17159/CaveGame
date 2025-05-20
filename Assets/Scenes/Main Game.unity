@@ -155,10 +155,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timer: 0
-  min: 60
-  max: 180
-  duration: 2
-  Crawler: {fileID: 8010999923668636100, guid: daa4b74234220534fa292d4493262c5a, type: 3}
+  min: 30
+  max: 45
+  duration: 5
+  radius: 3.5
+  Crawler: {fileID: 1563288008223648121, guid: fe3fd5fd8ac50fa42882adffd9f04c0f, type: 3}
   Player: {fileID: 390095395}
 --- !u!4 &55356405
 Transform:
@@ -188,10 +189,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timer: 0
-  min: 60
-  max: 180
+  min: 5
+  max: 10
   spawnRadius: 2
-  EyeMonster: {fileID: 8010999923668636100, guid: daa4b74234220534fa292d4493262c5a,
+  Decsender: {fileID: 1035985121}
+  EyeMonster: {fileID: 280377953292036828, guid: 4e40de8070d9711459d25a21cd963dbb,
     type: 3}
   Player: {fileID: 426668490}
 --- !u!1 &145051270
@@ -616,6 +618,12 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 0
+--- !u!4 &1035985121 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7328906253606141613, guid: e62f1cd74565b5e4cb421af7e222d9cd,
+    type: 3}
+  m_PrefabInstance: {fileID: 2708220100677900438}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1494337638
 PrefabInstance:
   m_ObjectHideFlags: 0
